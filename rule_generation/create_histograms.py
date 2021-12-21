@@ -9,6 +9,7 @@ import queue
 from collections import defaultdict
 from datetime import datetime
 from itertools import product
+import random
 from time import time
 
 
@@ -74,6 +75,12 @@ def parse_args():
         "--extensive_log",
         action="store_true",
         help=f"Detailed log messages",
+    )
+    ap.add_argument(
+        "--sample_size",
+        type=float,
+        help=f"Sample data down to 100*sample_size% of the original",
+        default=1.0,
     )
     return vars(ap.parse_args())
 
@@ -257,6 +264,7 @@ def create_histograms(args):
     print("start program:", start)
     min_sup = args["min_sup"]
     max_sup = args["max_sup"]
+    sampling_rate = args["sample_size"]
     temp_dir = "change_partitions"
     partition_size = args["partition_size"]
 
@@ -269,6 +277,10 @@ def create_histograms(args):
     # get index change -> dates
     with open(args["change_file"]) as f:
         all_changes = json.load(f)
+        keysSorted = sorted(all_changes.keys())
+        toSample = int(sampling_rate * len(keysSorted))
+        keysSorted = random.sample(keysSorted, toSample)
+        all_changes = {k: all_changes[k] for k in keysSorted}
 
     whitelist = None
     if "whitelist" in args and args["whitelist"]:
