@@ -14,6 +14,44 @@ Pre-processing has been done to identify columns and rows, thus, our data basis 
 Whenever such a table is being changed, there is a file in our dataset containing the whole table, corresponding to the time point of the change.
 Out of these files, we extract the changes, transform them, and generate rules for change dependencies.
 
+
+## Citation
+When referencing the CR-Miner algorithm, please use the following bibtex entry:
+<details><summary>(click to expand)</summary>
+
+```bibtex
+@inproceedings{DBLP:conf/edbt/LindnerSABBN22,
+  author       = {Daniel Lindner and
+                  Franziska Schumann and
+                  Nicolas Alder and
+                  Tobias Bleifu{\ss} and
+                  Leon Bornemann and
+                  Felix Naumann},
+  editor       = {Julia Stoyanovich and
+                  Jens Teubner and
+                  Paolo Guagliardo and
+                  Milos Nikolic and
+                  Andreas Pieris and
+                  Jan M{\"{u}}hlig and
+                  Fatma {\"{O}}zcan and
+                  Sebastian Schelter and
+                  H. V. Jagadish and
+                  Meihui Zhang},
+  title        = {Mining Change Rules},
+  booktitle    = {Proceedings of the 25th International Conference on Extending Database
+                  Technology, {EDBT} 2022, Edinburgh, UK, March 29 - April 1, 2022},
+  pages        = {2:91--2:103},
+  publisher    = {OpenProceedings.org},
+  year         = {2022},
+  url          = {https://doi.org/10.48786/edbt.2022.01},
+  doi          = {10.48786/edbt.2022.01},
+  timestamp    = {Tue, 11 Oct 2022 14:23:40 +0200},
+  biburl       = {https://dblp.org/rec/conf/edbt/LindnerSABBN22.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+```
+</details>
+
 ## exploration
 Scripts to get in touch with the data.
 
