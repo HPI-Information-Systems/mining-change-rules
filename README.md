@@ -1,8 +1,8 @@
-# Discovering Change Dependencies
+# Mining Change Rules
 
-This is the central code repository of the [_Discovering Change Dependencies_](https://hpi.de/naumann/teaching/master-projects/discovering-change-dependencies.html) master's project at the [chair of Prof. Naumann](https://hpi.de/naumann/home.html) at [HPI](https://hpi.de/).
+This is the central code repository for the research paper [_Mining Change Rules_](https://doi.org/10.48786/edbt.2022.01) (EDBT 2022), originating from a [master's project](https://hpi.de/naumann/teaching/master-projects/discovering-change-dependencies.html) at the [Information Systems chair](https://hpi.de/naumann/home.html) of Prof. Felix Naumann at [HPI](https://hpi.de/).
 
-"Everything changes and nothing stands still." - Heraclitus
+"Everything changes and nothing stands still." – Heraclitus
 
 Changes in databases occur permanently.
 The aim of this project is to discover dependencies within these changes.
@@ -16,9 +16,7 @@ Out of these files, we extract the changes, transform them, and generate rules f
 
 
 ## Citation
-When referencing the CR-Miner algorithm, please use the following bibtex entry:
-<details><summary>(click to expand)</summary>
-
+When referencing the paper or the CR-Miner algorithm, please use the following DBLP bibtex entry:
 ```bibtex
 @inproceedings{DBLP:conf/edbt/LindnerSABBN22,
   author       = {Daniel Lindner and
@@ -50,7 +48,6 @@ When referencing the CR-Miner algorithm, please use the following bibtex entry:
   bibsource    = {dblp computer science bibliography, https://dblp.org}
 }
 ```
-</details>
 
 ## exploration
 Scripts to get in touch with the data.
